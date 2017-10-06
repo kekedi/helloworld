@@ -1,22 +1,14 @@
-<!-- DOCTYPE html -->
+<!DOCTYPE html>
+{% load staticfiles %}
 <html>
 <head>
     <meta charset='utf-8'>
     <title>my little site</title>
-	<style type='text/css'>
-		body{
-		background-color:#9966CC;
-		margin-left:20%;
-		margin-right:20%;
-		border:2px dotted black;
-		padding:10px;
-		font-family:sans-serif;
-		}
-	</style>
+	<link rel='stylesheet' type='text/css' href="../static/css/index.css">
 </head>
 <body >
-<h1>for test</h1>
-<p><strong>请问</strong><br />
+<h1>测试</h1>
+<p class='ask'>请问:<br></p>
 <form> <input type='text' name='name' placeholder='你的名字是'> 
 	<p>你觉得自己:</p>
 	<select>
@@ -24,10 +16,10 @@
 		<option>very cool</option>
 	</select>
 </form>
-你想说啥：<br>
+<p class='say'>你想说啥：<br></p>
 <textarea rows='6' cols='80'>
 </textarea></p>
-<img src='https://wx2.sinaimg.cn/mw690/c535a8a9gy1fjws1lahicj21400p0ta2.jpg' alt='your name' height="400" width="560">
+<img src='../static/images/timg.jpg' alt='your name' height="400" width="560">
 <hr>
 <a href="https://github.com/kekedi/helloworld" title="to my git" target='_blank'>My git</a><br />
 <em>现在时间:{{now}}</em>
