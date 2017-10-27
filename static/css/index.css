@@ -2,14 +2,18 @@
 		background-color:#9966CC;
 		margin-left:20%;
 		margin-right:20%;
-		border:2px dotted black;
+		border:3px outset black;
 		padding:10px;
-		font-family:sans-serif;
+		font-family:serif;
+		font-style:italic;
+		font-weight:bold;
+		font-size:medium;
 		}
-	h1{color:gray;
+	h1{color:green;
 		border-bottom:1px solid green;
 		}
 	p{color:blue;
 		}
 	p.ask{color:black;}
 	p.say{color:white;}
+	em{font-weight:normal;}
