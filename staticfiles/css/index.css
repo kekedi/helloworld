@@ -1,19 +1,22 @@
 	body{
-		background-color:#9966CC;
+		background-color:#ccc;
+		color:#333;
 		margin-left:20%;
 		margin-right:20%;
 		border:3px outset black;
 		padding:10px;
-		font-family:serif;
+		font-family:"Helvetica","Arial",sans-serif;
 		font-style:italic;
-		font-weight:bold;
 		font-size:medium;
 		}
-	h1{color:green;
-		border-bottom:1px solid green;
+	h1{color:#333;
+	background-color:transparent;	
+	border-bottom:1px solid green;
 		}
-	p{color:blue;
-		}
-	p.ask{color:black;}
-	p.say{color:white;}
-	em{font-weight:normal;}
+	a{color:#c60;
+	background-color:transparent;
+	font-weight:bold;
+	text-decoration:none;}
+	#description {color:black;
+	font-weight:bold;
+	font-style:normal;}

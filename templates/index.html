@@ -2,31 +2,22 @@
 {% load staticfiles %}
 <html>
 <head>
-    <meta charset='utf-8'>
-    <title>my little site</title>
+    <meta charset="utf-8">
+    <title>Ekko</title>
 	<link rel='stylesheet' type='text/css' href="../static/css/index.css">
-	<script>
-	alert(`那你很
-棒棒
-噢`);
-	</script>
+	<script type="text/javascript" src="../static/js/showPic.js"></script>
 </head>
 <body >
 <h1>测试</h1>
-<p class='ask'>请问:<br></p>
-<form> <input type='text' name='name' placeholder='你的名字是'> 
-	<p>你觉得自己:</p>
-	<select>
-		<option>cool</option>
-		<option>very cool</option>
-	</select>
-<p class='say'>你想说啥：<br></p>
-<textarea rows='6' cols='80'></textarea></p>
-<input type='color'>
-</form><br>
-<img src='../static/images/timg.jpg' alt='your name'>
+<ul>
+	<li><a href="../static/images/sunset.jpg" onclick="showPic(this);return false;" title="日落之时">日落之时</a></li>
+	<li><a href="../static/images/castle.jpg" onclick="showPic(this);return false;" title="城堡">城堡</a></li>
+	<li><a href="../static/images/diandongche.jpg" onclick="showPic(this);return false;" title="电动车">电动车</a></li>
+</ul>
+<p id="description">选择一个图片标题以显示对应图片</p>
+<img id="placeholder" src="../static/images/timg.jpg" alt="选择一个图片标题以显示对应图片">	
 <hr>
-<a href="https://github.com/kekedi/helloworld" title="to my git" target='_blank'>My git</a><br>
+<a href="https://github.com/kekedi/helloworld"  title="to my git" target="_blank">My git</a><br>
 <em>现在时间:{{now}}</em>
 </body>
 </html>
